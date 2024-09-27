@@ -1,4 +1,4 @@
-package practice;
+package practice.day01;
 
 public class P01_HelloWorld {
 
