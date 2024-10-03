@@ -19,7 +19,6 @@ public class C06_SayiyiYaziyaCevirme {
         int onlarBasamagi = sayi / 10;
 
         switch (onlarBasamagi) {
-
             case 0:
                 break;
             case 1:
