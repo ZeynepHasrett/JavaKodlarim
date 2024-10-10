@@ -1,4 +1,4 @@
-package day15_arrays_multiDimensionalArrays;
+package day15_arrays;
 
 import day14_scope_arrays.C07_TumElementleriArtirma;
 
