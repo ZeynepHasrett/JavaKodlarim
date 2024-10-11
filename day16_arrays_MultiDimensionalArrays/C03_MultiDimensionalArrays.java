@@ -10,8 +10,7 @@ public class C03_MultiDimensionalArrays {
         // ne yazdirdigimizi iyi bilmeliyiz
         // eger bir String veya primitive bir deger yazdiracaksak direkt sout
         // eger yazdirmak istedigimiz sey tek katli bir array ise Arrays.toString(arr[3])
-        // eger yazdirmak istedigimiz sey multi dimensional array ise
-        //
+        // eger yazdirmak istedigimiz sey multi dimensional array ise Arrays.deepToString(arr)
 
 
         int[][] arr = {{2, 3, 7}, {3, 5}, {4}, {1, 2, 3, 6, 8}};
