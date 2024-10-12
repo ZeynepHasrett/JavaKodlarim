@@ -1,31 +1,28 @@
 package day12_methodOverloading_WhileLoop;
 
-import java.util.Scanner;
-
 public class C04_WhileLoop {
 
     public static void main(String[] args) {
 
         /*
-            SORU: While loop kullanarak
-            kullanicidan alinan sayinin rakamlar toplamini bulun.
+            SORU: 2 basamakli 7 ile bolunebilen sayilari yazdirin
          */
 
 
-        Scanner scan = new Scanner(System.in);
+        int sayi = 10;
 
-        System.out.println("Lutfen bir sayi giriniz");
-        int sayi = scan.nextInt();
-
-        int rakamlarToplami = 0;
+        String sayilar = "";
 
 
-        while (sayi > 0) {
-            rakamlarToplami += sayi % 10;
-            sayi = sayi / 10;
+        while (sayi < 100) {
+            if (sayi % 7 == 0) {
+                sayilar += sayi + ", ";
+            }
+            sayi++;
+
         }
 
-        System.out.println("Rakamlar Toplami : " + rakamlarToplami);
+        System.out.println(sayilar);
 
     }
 

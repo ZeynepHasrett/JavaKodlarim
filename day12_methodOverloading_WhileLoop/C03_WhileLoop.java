@@ -5,25 +5,40 @@ public class C03_WhileLoop {
     public static void main(String[] args) {
 
         /*
-            SORU: 2 basamakli 7 ile bolunebilen sayilari yazdirin
-         */
+            SORU: 1' den 100'e kadar olan sayilarin toplamini yazdirin
+        */
 
+        int toplam = 0;
 
-        int sayi = 10;
-
-        String sayilar = "";
-
-
-        while (sayi < 100) {
-            if (sayi % 7 == 0) {
-                sayilar += sayi + ", ";
-            }
-            sayi++;
-
+        for (int i = 1; i < 100; i++) {
+            toplam += i;
         }
 
-        System.out.println(sayilar);
+        System.out.println("Toplam2 : " + toplam);
+
+
+        System.out.println("--------------------");
+
+
+        int sayi = 1;
+        int toplam2 = 0;
+
+        while (sayi < 100) {
+            toplam2 += sayi;
+            sayi++;
+        }
+
+        System.out.println("Toplam : " + toplam2);
 
     }
+
+
+    /*
+        FOR LOOP : Bize otomatik olarak bir format verir
+        artis miktari, baslangic ve bitis degerleri otomatik olarak verir
+
+        WHILE LOOP: Baslangic, bitis degerleri ve artis miktari
+        manuel olarak tanimlanir
+     */
 
 }

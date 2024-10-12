@@ -12,9 +12,7 @@ public class C07_Odev {
               1 2 3
              1 2 3 4
 
-            başlarina space ekle
-            space sayisi, satir sayısına gore dinamik bosluk eklenecek
-         */
+        */
 
 
         for (int i = 1; i <= 4; i++) {
