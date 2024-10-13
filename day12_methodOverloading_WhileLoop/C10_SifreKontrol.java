@@ -25,6 +25,7 @@ public class C10_SifreKontrol {
 
             System.out.println("Lutfen bir sifre giriniz...");
             girilenSifre = scanner.nextLine();
+
             sifreUygunMu = sifreKontrolEt(girilenSifre);
 
         }

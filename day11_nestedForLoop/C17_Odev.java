@@ -12,24 +12,40 @@ public class C17_Odev {
         // sifre uygun oldugunda kac denemede uygun sifre yazabildigini kodla soyleyin
 
 
-        Scanner scan = new Scanner(System.in);
-
-        String sifre = scan.nextLine();
-
-        int sayac = 0;
+        Scanner scanner = new Scanner(System.in);
 
 
-        while (C16_SifreDogruMuDondur.sifreDogruMu(sifre) == false) {
+//            for (int i = 1; i <= 10000; i++) {
+//
+//            System.out.println("Lutfen bir sifre giriniz");
+//            String sifre = scanner.nextLine();
+//
+//            if (C16_SifreDogruMuDondur.sifreDogruMu(sifre) == true) {
+//
+//                System.out.println(i + " denemede gecerli sifre girdiniz");
+//                break;
+//
+//            }
+//
+//        }
 
-            System.out.println("Lutfen sifrenizi giriniz");
 
-            sifre = scan.nextLine();
+        boolean sormayaDevamEdeyimMi = true;
+        int sayac = 1;
+
+        while (sormayaDevamEdeyimMi) {
+
+            System.out.println("Lutfen bir sifre giriniz");
+            String sifre = scanner.nextLine();
+
+            if (C16_SifreDogruMuDondur.sifreDogruMu(sifre) == true) {
+                System.out.println(sayac + " denemede gecerli sifre girdiniz");
+                sormayaDevamEdeyimMi = false;
+            }
 
             sayac++;
 
         }
-
-        System.out.println("Yanlis deneme sayisi : " + sayac);
 
     }
 
