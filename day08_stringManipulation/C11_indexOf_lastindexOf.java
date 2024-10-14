@@ -12,7 +12,7 @@ public class C11_indexOf_lastindexOf {
                     yazdirin
                     Aranan metin cumlede yok
                     Aranan metin cumlede sadece 1 kere kullanilmis
-                    Aranan metin String’de sadece 1’den fazla kullanilmis
+                    Aranan metin String’de 1’den fazla kullanilmis
          */
 
 
