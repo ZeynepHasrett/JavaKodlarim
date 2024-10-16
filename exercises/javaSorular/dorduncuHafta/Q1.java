@@ -2,7 +2,7 @@ package exercises.javaSorular.dorduncuHafta;
 
 import java.util.Scanner;
 
-public class Q1_ {
+public class Q1 {
 
     public static void main(String[] args) {
 

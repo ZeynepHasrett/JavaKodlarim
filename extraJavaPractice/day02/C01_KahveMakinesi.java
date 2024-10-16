@@ -95,63 +95,91 @@ public class C01_KahveMakinesi {
                 "\n2-Filtre Kahve" +
                 "\n3-Espresso");
 
-        System.out.println("Icmek istediginiz kahvenin tam adini yaziniz");
-        String hangiKahve = scan.nextLine();
+        String hangiKahve;
 
-        if (hangiKahve.equalsIgnoreCase("Turk Kahvesi") || hangiKahve.equalsIgnoreCase("Türk kahvesi")) {
-            System.out.println(hangiKahve + " hazirlaniyor...");
-        } else if (hangiKahve.equalsIgnoreCase("Filtre kahve")) {
-            System.out.println(hangiKahve + " hazirlaniyor...");
-        } else if (hangiKahve.equalsIgnoreCase("Espresso")) {
-            System.out.println(hangiKahve + " hazirlaniyor...");
-        } else {
-            System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+        while (true) {
+            System.out.println("Icmek istediginiz kahvenin tam adini yaziniz");
+            hangiKahve = scan.nextLine();
+            if (hangiKahve.equalsIgnoreCase("Turk Kahvesi") || hangiKahve.equalsIgnoreCase("Türk kahvesi")) {
+                System.out.println(hangiKahve + " hazirlaniyor...");
+                break;
+            } else if (hangiKahve.equalsIgnoreCase("Filtre kahve")) {
+                System.out.println(hangiKahve + " hazirlaniyor...");
+                break;
+            } else if (hangiKahve.equalsIgnoreCase("Espresso")) {
+                System.out.println(hangiKahve + " hazirlaniyor...");
+                break;
+            } else {
+                System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+            }
+
         }
 
-        System.out.println("Sut ister misiniz, Evet veya Hayir olarak cevaplayiniz");
-        String sut = scan.nextLine();
+        while (true) {
+            System.out.println("Sut ister misiniz, Evet veya Hayir olarak cevaplayiniz");
+            String sut = scan.nextLine();
 
-        if (sut.equalsIgnoreCase("Evet")) {
-            System.out.println("Sut ekleniyor");
-        } else if (sut.equalsIgnoreCase("Hayir")) {
-            System.out.println("Sut eklenmiyor");
-        } else {
-            System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+            if (sut.equalsIgnoreCase("Evet")) {
+                System.out.println("Sut ekleniyor");
+                break;
+            } else if (sut.equalsIgnoreCase("Hayir")) {
+                System.out.println("Sut eklenmiyor");
+                break;
+            } else {
+                System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+            }
         }
 
-        System.out.println("Seker ister misiniz, Evet veya Hayir olarak cevaplayiniz");
-        String seker = scan.nextLine();
+        while (true) {
 
-        if (seker.equalsIgnoreCase("Evet")) {
-            System.out.println("Kac seker olsun?");
-            int kacSeker = scan.nextInt();
-            System.out.println(kacSeker + " seker ekleniyor.");
-        } else if (seker.equalsIgnoreCase("Hayir")) {
-            System.out.println("Seker eklenmiyor, enter'a basiniz");
-        } else {
-            System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+            System.out.println("Seker ister misiniz, Evet veya Hayir olarak cevaplayiniz");
+            String seker = scan.nextLine();
+
+            if (seker.equalsIgnoreCase("Evet")) {
+                System.out.println("Kac seker olsun?");
+                int kacSeker = scan.nextInt();
+                System.out.println(kacSeker + " seker ekleniyor.");
+                break;
+            } else if (seker.equalsIgnoreCase("Hayir")) {
+                System.out.println("Seker eklenmiyor, enter'a basiniz");
+                break;
+            } else {
+                System.out.println("Hatali giris yaptiniz, bastan baslayiniz");
+            }
+
         }
 
         String bosKod = scan.nextLine(); // dummy kod
+        String boyut;
+        while (true) {
+            System.out.println("Hangi boyutta olsun?  (Büyük boy - orta boy - küçük boy olarak giriniz.)");
+            boyut = scan.nextLine();
 
-        System.out.println("Hangi boyutta olsun?  (Büyük boy - orta boy - küçük boy olarak giriniz.)");
-        String boyut = scan.nextLine();
+            if (boyut.equalsIgnoreCase("Büyük boy") || boyut.equalsIgnoreCase("Buyuk boy")) {
+                System.out.println(boyut + " kahveniz hazirlaniyor");
+                break;
+            } else if (boyut.equalsIgnoreCase("orta boy")) {
+                System.out.println(boyut + " kahveniz hazirlaniyor");
+                break;
+            } else if (boyut.equalsIgnoreCase("Kücük boy") || boyut.equalsIgnoreCase("Kucuk boy")) {
+                System.out.println(boyut + " kahveniz hazirlaniyor");
+                break;
+            } else {
+                System.out.println("Hatali giris yaptiniz");
+            }
 
-        if (boyut.equalsIgnoreCase("Büyük boy") || boyut.equalsIgnoreCase("Buyuk boy")) {
-            System.out.println(boyut + " kahveniz hazirlaniyor");
-        } else if (boyut.equalsIgnoreCase("orta boy")) {
-            System.out.println(boyut + " kahveniz hazirlaniyor");
-        } else if (boyut.equalsIgnoreCase("Kücük boy") || boyut.equalsIgnoreCase("Kucuk boy")) {
-            System.out.println(boyut + " kahveniz hazirlaniyor");
-        } else {
-            System.out.println("Hatali giris yaptiniz");
         }
 
         System.out.println("--------------------");
         System.out.println("--------------------");
         System.out.println("--------------------");
 
-        System.out.println(boyut.toUpperCase().charAt(0) + boyut.substring(1) + " " + hangiKahve.toUpperCase().charAt(0) + hangiKahve.substring(1) + " " + " hazırdır. Afiyet olsun!!!");
+
+        System.out.println(boyut.substring(0,1).toUpperCase() +
+                           boyut.substring(1) + " " +
+                           hangiKahve.substring(0,1).toUpperCase() +
+                           hangiKahve.substring(1) + " " +
+                           " hazirdir. Afiyet olsun!!!");
 
     }
 
