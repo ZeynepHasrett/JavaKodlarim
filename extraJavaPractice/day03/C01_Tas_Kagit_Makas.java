@@ -38,21 +38,26 @@ public class C01_Tas_Kagit_Makas {
             if (kullaniciSecimi == 1 && bilgisayarinSecimi == 2) {
                 System.out.println("Kagit tasi sarar, bilgisayar +1");
                 bilgisayar++;
+                System.out.println("Kullanici: " + kullanici + " " + "Bilgisayar: " + bilgisayar);
             } else if (kullaniciSecimi == 1 && bilgisayarinSecimi == 3) {
                 System.out.println("Tas makasi kirar, kullanici +1");
                 kullanici++;
             } else if (kullaniciSecimi == 2 && bilgisayarinSecimi == 1) {
                 System.out.println("Kagit tasi sarar, kullanici +1");
                 kullanici++;
+                System.out.println("Kullanici: " + kullanici + " " + "Bilgisayar: " + bilgisayar);
             } else if (kullaniciSecimi == 2 && bilgisayarinSecimi == 3) {
                 System.out.println("Makas kagidi keser, bilgisayar +1");
                 bilgisayar++;
+                System.out.println("Kullanici: " + kullanici + " " + "Bilgisayar: " + bilgisayar);
             } else if (kullaniciSecimi == 3 && bilgisayarinSecimi == 1) {
                 System.out.println("Tas makasi kirar, bilgisayar +1");
                 bilgisayar++;
+                System.out.println("Kullanici: " + kullanici + " " + "Bilgisayar: " + bilgisayar);
             } else if (kullaniciSecimi == 3 && bilgisayarinSecimi == 2) {
                 System.out.println("Makas kagidi keser, kullanici +1");
                 kullanici++;
+                System.out.println("Kullanici: " + kullanici + " " + "Bilgisayar: " + bilgisayar);
             } else {
                 System.out.println("Berabere kaldiniz!");
                 System.out.println("Kullanici skoru : " + kullanici + " " + "Bilgisayar skoru : " + bilgisayar);
