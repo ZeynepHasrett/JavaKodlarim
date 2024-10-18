@@ -1,4 +1,4 @@
-package javaPractice.day04;
+package day21_;
 
 public class C01_ {
 

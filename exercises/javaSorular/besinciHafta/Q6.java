@@ -27,16 +27,23 @@ public class Q6 {
         System.out.println("Lutfen bir ucuncu sayiyi giriniz");
         int sayi3 = scanner.nextInt();
 
+        enKucukSayi(sayi1, sayi2, sayi3);
+
+    }
+
+    public static void enKucukSayi(int sayi1, int sayi2, int sayi3) {
+
         int enKucukSayi = sayi1;
 
-
-        /*if (enKucukSayi > sayi2){
+        if (sayi2 < enKucukSayi) {
             enKucukSayi = sayi2;
-
         }
 
-        (enKucukSayi > sayi2) ? enKucukSayi = sayi2 : enKucukSayi > sayi2 ?
-        */
+        if (sayi3 < enKucukSayi) {
+            enKucukSayi = sayi3;
+        }
+
+        System.out.println("En kucuk sayi : " + enKucukSayi);
 
     }
 
