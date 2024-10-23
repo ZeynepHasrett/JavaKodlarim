@@ -18,7 +18,7 @@ public class Q2 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Lutfen bir cumle giriniz");
-        String cumle = scanner.nextLine();
+        String cumle = scanner.nextLine().toUpperCase();
 
         System.out.println(cumle);
 

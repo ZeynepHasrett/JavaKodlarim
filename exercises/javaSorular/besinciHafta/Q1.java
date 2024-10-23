@@ -32,6 +32,16 @@ public class Q1 {
 
         }
 
+        /*
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Lutfen bir kelime giriniz : ");
+            String str = scan.next();
+
+            String sonHarfiSil = str.substring(0, str.length() - 1); // tersten son indexi sil
+
+            System.out.println(sonHarfiSil);
+         */
+
     }
 
 }

@@ -1,4 +1,4 @@
-package day22_immutableClasses;
+package day22_immutableClasses_dateTime;
 
 public class C03_StringPool {
 
@@ -42,6 +42,7 @@ public class C03_StringPool {
 
             == Sadece metne bakmaz, metne ve referansa birlikte bakar
             yani true olmasi icin hem metnin hem de referansin ayni olmasi gerekir
+            bu da ancak String Pool'da olup metni ayni olan String'ler icin MUMKUNDUR
 
             equals() ise SADECE metne bakar, metin ayni ise true verir
          */
