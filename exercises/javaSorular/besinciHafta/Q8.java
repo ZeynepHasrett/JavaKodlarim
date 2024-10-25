@@ -1,5 +1,6 @@
 package exercises.javaSorular.besinciHafta;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Q8 {
@@ -37,6 +38,17 @@ public class Q8 {
         }
 
         return false;
+
+        /*
+        2.YONTEM
+        if (yil % 400 == 0 || (yil % 100 != 0 && yil % 4 == 0)) {
+
+            System.out.println(yil + " artik yildir");
+
+        } else {
+            System.out.println(yil + " artik yil degildir");
+	    }
+	    */
 
     }
 

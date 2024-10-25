@@ -13,6 +13,9 @@ public class C03_StringBuilderKarsilastirma {
         StringBuilder sb1 = new StringBuilder("Murat");
         StringBuilder sb2 = new StringBuilder("Murat");
 
+        // StringBuilder'i sadece toString() ile String'e cevirip karsilastirabiliriz
+        System.out.println(sb1.toString().equals(str1)); // true
+
 
         System.out.println("-------------------------");
         // Ayni metne sahip yani icerige sahip str1, sb1, sb2 'yi karsilastiralim

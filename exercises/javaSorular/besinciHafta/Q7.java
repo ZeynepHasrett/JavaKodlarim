@@ -43,7 +43,20 @@ public class Q7 {
 
         System.out.println("Stringdeki sesli harf sayisi : " + sayac);
 
-    }
+        /*
+        int sayac = 0;
 
+        for (int i = 0; i < metin.length(); i++) {
+            char chr = metin.toLowerCase().charAt(i);
+
+            if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u'){
+                sayac++;
+            }
+        }
+
+        System.out.println("Stringdeki sesli harf sayisi : " + sayac);
+        */
+
+    }
 
 }

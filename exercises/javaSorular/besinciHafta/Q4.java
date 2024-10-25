@@ -32,6 +32,13 @@ public class Q4 {
             System.out.println("Gecersiz index");
         }
 
+        /*
+            //2.YONTEM
+
+        System.out.println(index + ". pozisyondaki karakter : " + metin.substring(0, 1));
+        System.out.println(index + ". pozisyondaki karakter : " + metin.substring(5, 6));
+        */
+
     }
 
 }

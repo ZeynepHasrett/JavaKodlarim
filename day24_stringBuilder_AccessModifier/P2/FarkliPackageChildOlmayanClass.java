@@ -6,18 +6,17 @@ public class FarkliPackageChildOlmayanClass extends Datalar {
 
     public static void main(String[] args) {
 
-        //System.out.println(sayiPrivate);
-        //methodPrivate();
+        // System.out.println(Datalar.sayiPrivate);
+        // Datalar.methodPrivate();
 
-        //System.out.println(strDefault);
-        //methodDefault();
+        // System.out.println(Datalar.strDefault);
+        // Datalar.methodDefault();
 
-        System.out.println(chrProtected);
-        methodProtected();
+        // System.out.println(Datalar.chrProtected);
+        //  Datalar.methodProtected();
 
-        System.out.println(doublePublic);
-        methodPublic();
-
+        System.out.println(Datalar.doublePublic);
+        Datalar.methodPublic();
     }
 
 }

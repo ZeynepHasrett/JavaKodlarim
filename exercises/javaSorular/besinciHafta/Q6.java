@@ -16,6 +16,12 @@ public class Q6 {
             12
          */
 
+        enKucukSayi();
+
+    }
+
+    public static void enKucukSayi() {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Lutfen bir birinci sayiyi giriniz");
@@ -26,12 +32,7 @@ public class Q6 {
 
         System.out.println("Lutfen bir ucuncu sayiyi giriniz");
         int sayi3 = scanner.nextInt();
-
-        enKucukSayi(sayi1, sayi2, sayi3);
-
-    }
-
-    public static void enKucukSayi(int sayi1, int sayi2, int sayi3) {
+        scanner.nextLine();
 
         int enKucukSayi = sayi1;
 
@@ -43,7 +44,21 @@ public class Q6 {
             enKucukSayi = sayi3;
         }
 
+
+        // 2.YONTEM
         System.out.println("En kucuk sayi : " + enKucukSayi);
+
+        if (sayi2 > sayi1 && sayi3 >= sayi2) {
+            System.out.println("En kucuk sayi : " + sayi1);
+        } else if (sayi1 > sayi2 && sayi2 <= sayi3) {
+            System.out.println("En kucuk sayi : " + sayi2);
+        } else if (sayi1 > sayi3 && sayi3 <= sayi2) {
+            System.out.println("En kucuk sayi : " + sayi3);
+        }
+
+
+        // 3.YONTEM
+        System.out.println(sayi1 < sayi2 ? (sayi1 < sayi3 ? sayi1 : sayi3) : (sayi2 < sayi3 ? sayi2 : sayi3));
 
     }
 

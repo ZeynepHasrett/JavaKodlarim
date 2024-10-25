@@ -50,6 +50,11 @@ public class C01_StringBuilder {
         System.out.println("sb4'in uzunlugu = " + sb4.length()); // sb4'in uzunlugu = 26
         System.out.println("sb4'in kapasitesi = " + sb4.capacity()); // sb4'in kapasitesi = 42
 
+        // capacity'i length'e indirgemek istersek
+        sb4.trimToSize();
+        System.out.println("sb4'in uzunlugu = " + sb4.length()); // sb4'in uzunlugu = 26
+        System.out.println("sb4'in kapasitesi = " + sb4.capacity()); // sb4'in kapasitesi = 26
+
 
         long tcNo = 12356448254L;
         System.out.println("tcNo = " + (tcNo + 1));
@@ -65,7 +70,16 @@ public class C01_StringBuilder {
 
         sb5.append(str, 0, 5);
         System.out.println(sb5); // JavaGuzel
-        
+
+
+        // StringBuilder'da olmayip String'de olan methodlari kullanmak istersek
+        // oncelikle StringBuilder'i toString() ile String'e ceviririz
+
+        // sb "a" iceriyor mu?
+        System.out.println(sb5.toString().contains("A")); // false
+
+        System.out.println(sb5.toString().toUpperCase().contains("A")); // true
+
     }
 
 }

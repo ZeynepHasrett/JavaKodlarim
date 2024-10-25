@@ -32,7 +32,7 @@ public class Q19 {
 
         boolean sonuc = false;
 
-        for (int i = 1; i < girilenSayi; i++) {
+        for (int i = 1; i <= girilenSayi; i++) {
 
             carpim *= 3;
 

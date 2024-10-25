@@ -22,21 +22,50 @@ public class Q3 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lutfen bir kelime giriniz");
-        String kelime = scanner.nextLine();
+        System.out.println("Lutfen bir kelime veya metin giriniz");
+        String metin = scanner.nextLine();
 
-        String tersKelime = "";
-
-        for (int i = kelime.length() - 1; i >= 0; i--) {
-            tersKelime += kelime.substring(i, i + 1);
+        String tersMetin = "";
+/*
+        for (int i = metin.length() - 1; i >= 0; i--) {
+            tersMetin += metin.substring(i, i + 1);
 
         }
 
-        if (kelime.equalsIgnoreCase(tersKelime)) {
+        if (metin.equalsIgnoreCase(tersMetin)) {
             System.out.println("True");
         } else {
             System.out.println("False");
         }
+
+*/
+        /* 2.YONTEM
+
+        String tersMetin = "";
+
+        String[] arr =metin.split("");
+
+        for (int i = arr.length - 1; i >= 0 ; i--) {
+            tersMetin += arr[i];
+        }
+
+        if (tersMetin.equalsIgnoreCase(metin)){
+            System.out.println("True");
+        }else {
+            System.out.println("False");
+        }
+
+
+         3.YONTEM
+
+        StringBuilder sb = new StringBuilder(metin);
+
+        if (sb.reverse().toString().equalsIgnoreCase(metin)){
+            System.out.println("True");
+        }else {
+            System.out.println("False");
+        }
+        */
 
     }
 

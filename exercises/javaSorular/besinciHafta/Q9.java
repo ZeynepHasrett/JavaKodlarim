@@ -32,6 +32,19 @@ public class Q9 {
         Collections.sort(diller);
         System.out.println(diller);
 
+
+        /*
+        2.YONTEM
+
+        int[] sayilarList = {1232, 1134, 2345, 1022};
+        Arrays.sort(sayilarList);
+        System.out.println(Arrays.toString(sayilarList));
+
+        String[] dillerList = {"Java", "Python", "PHP", "C#", "C Programming", "C++"};
+        Arrays.sort(dillerList);
+        System.out.println(Arrays.toString(dillerList));
+        */
+
     }
 
 }
