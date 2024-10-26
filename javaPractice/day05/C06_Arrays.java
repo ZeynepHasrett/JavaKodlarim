@@ -8,9 +8,9 @@ public class C06_Arrays {
     public static void main(String[] args) {
 
         /*
-             Kullanicin girdigi sayi kadar int array olusturan ve array elemanlarini
+             Kullanicinin girdigi sayi kadar int array olusturan ve array elemanlarini
              kullanicidan alan ve girilen array elemanlarinin en buyuk ile en kucuk
-             elemaninin arasinki farki gosteren Java programi yazin
+             elemaninin arasindaki farki gosteren Java programi yazin
         */
 
         Scanner scanner = new Scanner(System.in);

@@ -8,7 +8,7 @@ public class C02_WhileLoop {
 
         /*
             Kullanıcıdan alınan sayinin basamak degerlerinin toplamini
-            while loop ile yapan birkod yazınız.
+            while loop ile yapan bir kod yazınız.
         */
 
         Scanner scanner = new Scanner(System.in);
