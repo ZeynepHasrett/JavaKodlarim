@@ -17,6 +17,9 @@ public class Q9 {
             reversed -> "fun is Java"
          */
 
+        /*
+            1.Yöntem
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Lutfen bir cumle giriniz");
@@ -32,6 +35,29 @@ public class Q9 {
 
         cumle = yeniCumle;
         System.out.println(cumle);
+        */
+
+        String str = "Java is fun";
+
+        String[] bolunmusStr = str.split(" ");
+
+        String tersCumle = strTersten(bolunmusStr);
+
+        System.out.println(tersCumle);
+
+    }
+
+    private static String strTersten(String[] bolunmusStr) {
+
+        String gecici = "";
+
+        for (int i = 0; i < bolunmusStr.length; i++) {
+
+            gecici += bolunmusStr[bolunmusStr.length - 1 - i];
+            gecici += " ";
+        }
+
+        return gecici;
 
     }
 

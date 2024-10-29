@@ -11,11 +11,12 @@ public class Q2 {
 
              Beklenen Çıktı:
              Array Sayılarının ortalaması: 7.0
+
         */
 
-        int[] array = {20, 30, 25, 35, -16, 60, -100};
+        double[] array = {20, 30, 25, 35, -16, 60, -100};
 
-        int toplam = 0;
+        double toplam = 0;
         double ort = 0;
 
         for (int i = 0; i < array.length; i++) {

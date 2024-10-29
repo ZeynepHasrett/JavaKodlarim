@@ -26,7 +26,7 @@ public class Q3 {
                 System.out.print("0 ");
             }
 
-            System.out.println("");
+            System.out.println(" ");
 
         }
 

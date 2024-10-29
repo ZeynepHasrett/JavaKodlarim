@@ -1,6 +1,7 @@
 package exercises.javaSorular.altinciHafta;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Q6 {
@@ -24,7 +25,14 @@ public class Q6 {
             list.add(arr[i]);
         }
 
+
+        /*
+        2.Yöntem
+
+        List<String> list = new ArrayList<>(Arrays.asList(arr));
+
         System.out.println(list);
+        */
 
     }
 
