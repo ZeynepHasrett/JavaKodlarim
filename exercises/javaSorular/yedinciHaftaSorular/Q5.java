@@ -1,5 +1,8 @@
 package exercises.javaSorular.yedinciHaftaSorular;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class Q5 {
 
     public static void main(String[] args) {
@@ -14,7 +17,20 @@ public class Q5 {
             sonuc: [7,14,21,28,35]
          */
 
+        System.out.println(Arrays.toString(arrayOfMultiples(7,5)));
 
+    }
+
+    public static int[] arrayOfMultiples(int sayi1, int sayi2) {
+
+        int[] arr = new int[sayi2];
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[0] = sayi1;
+            arr[i + 1] += arr[i] + sayi1;
+        }
+
+        return arr;
 
     }
 
