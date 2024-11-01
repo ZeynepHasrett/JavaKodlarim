@@ -18,23 +18,18 @@ public class Q8 {
 
     }
 
-    public static int farkBul(int[] arr){
+    public static int farkBul(int[] arr) {
 
-        int enBuyukSayi = 0;
-        int enKucukSayi = 0;
+        int enBuyukSayi = arr[0];
 
-        for (int i = 0; i < arr.length; i++) {
+        int enKucukSayi = arr[0];
 
-            if (arr[i] > enBuyukSayi){
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] > enBuyukSayi) {
                 enBuyukSayi = arr[i];
-            }
-            if(arr[i] > enKucukSayi ){
-
-            }
-
-            if (arr[i] < arr[i+1]){
+            } else if (enKucukSayi > arr[i]) {
                 enKucukSayi = arr[i];
-                enBuyukSayi = arr[i+1];
             }
 
         }
