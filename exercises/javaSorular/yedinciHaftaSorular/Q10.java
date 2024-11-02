@@ -21,11 +21,13 @@ public class Q10 {
             nine hundred nine
          */
 
-        System.out.println(numToEng(0));
+        System.out.println(numToEng(101));
 
     }
 
     public static String numToEng(int sayi) {
+
+        int birlerBasamagi = sayi % 10;
 
         String metin = "";
 
@@ -94,7 +96,13 @@ public class Q10 {
                 metin = "nineteen";
                 break;
             case 20:
-                metin = "twenty";
+                metin = "twenty ";
+                break;
+        }
+
+        switch (sayi){
+            case 100:
+                System.out.println("one hundred ");
                 break;
         }
 

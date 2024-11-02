@@ -9,7 +9,7 @@ public class C08_ArrayList {
     public static void main(String[] args) {
 
         /*
-            Bir öğretmenden girmek istediği kadar notu alınız, ve
+            Bir öğretmenden girmek istediği kadar notu alınız ve
             ortalamayı geçen öğrenci sayısını bulunuz.
          */
 

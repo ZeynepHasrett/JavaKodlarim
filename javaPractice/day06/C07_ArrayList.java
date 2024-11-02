@@ -12,7 +12,7 @@ public class C07_ArrayList {
             Input olarak verilen listteki isimlerden
             icinde 'a' harfi bulunanlari silen bir program yaziniz
 
-            INPUT : list1={"Ali","Veli","Ayse","Fatma","Omer"}
+            INPUT : list1 = {"Ali","Veli","Ayse","Fatma","Omer"}
             OUTPUT : [Veli,Omer]
          */
 
