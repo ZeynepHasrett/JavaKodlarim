@@ -22,20 +22,25 @@ public class C03_SicaklikGostergesiArrayList {
 
             String input = scanner.nextLine();
 
-            if (input.equals("e")) {
+            if (input.equalsIgnoreCase("e")) {
                 System.out.println("Veri girisi sonlandirildi.");
                 break;
+            } else if (input.matches("-?\\d++(\\.\\d+)?")) {
+                double girilenSicaklik = Double.parseDouble(input);
+                sicakliklar.add(girilenSicaklik);
             } else {
-                double sicaklik = Double.parseDouble(input);
-                sicakliklar.add(sicaklik);
+                System.out.println("Gecersiz veri girisi!");
             }
 
         }
 
-        Collections.sort(sicakliklar);
-
-        System.out.println("Gunun en dusuk sicaklik degeri : " + sicakliklar.get(0));
-        System.out.println("Gunun en yuksek sicaklik degeri : " + sicakliklar.get(sicakliklar.size() - 1));
+        if (!sicakliklar.isEmpty()) {
+            Collections.sort(sicakliklar);
+            System.out.println("Gunun en dusuk sicaklik degeri : " + sicakliklar.get(0));
+            System.out.println("Gunun en yuksek sicaklik degeri : " + sicakliklar.get(sicakliklar.size() - 1));
+        } else {
+            System.out.println("Liste bos, hic deger girilmedi");
+        }
 
     }
 
