@@ -23,12 +23,11 @@ public class Q6 {
 
         boolean sonuc = true;
 
-        for (int i = 2; i < sayi; i++) {
+        for (int i = 2; i <= sayi/2 +1; i++) { // herhangi bir sayinin yarisindan buyuk sayilar, o sayiya tam bolunemez
 
             if (sayi % i == 0) {
                 sonuc = false;
-            } else {
-                return sonuc;
+                break;
             }
 
         }

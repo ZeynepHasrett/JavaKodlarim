@@ -24,35 +24,35 @@ public class Q9 {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15};
 
-        System.out.println(Arrays.toString(countPositivesSumNegative(arr)));
+        countPositivesSumNegative(arr);
 
     }
 
-    public static int[] countPositivesSumNegative(int[] arr) {
+    public static void countPositivesSumNegative(int[] arr) {
 
-        int sayac = 0;
-        int toplam = 0;
+        int pozitifAdedi = 0;
+        int negatifToplam = 0;
 
         if (arr.length == 0) {
-            return arr;
+            System.out.println(Arrays.toString(arr));
         }
 
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] > 0) {
-                sayac++;
+                pozitifAdedi++;
             } else if (arr[i] < 0) {
-                toplam += arr[i];
+                negatifToplam += arr[i];
             }
 
         }
 
         int[] arrYeni = new int[2];
 
-        arrYeni[0] = sayac;
-        arrYeni[1] = toplam;
+        arrYeni[0] = pozitifAdedi;
+        arrYeni[1] = negatifToplam;
 
-        return arrYeni;
+        System.out.println(Arrays.toString(arrYeni) + "\nToplam " + pozitifAdedi + " adet pozitif sayı var.\nTum negatif sayilarin toplami " + negatifToplam + "'tir.");
 
     }
 

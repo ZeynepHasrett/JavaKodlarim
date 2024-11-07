@@ -104,12 +104,32 @@ public class ATM {
 
     private static void sifredegistirme() {
 
+
+
     }
 
     private static void paragonderme() {
 
+        scan.nextLine();
         System.out.println("IBAN No giriniz (TR ile baslamali ve 10 karakter uzunlugunda olmalidir) ");
         String iban = scan.nextLine().toUpperCase().replaceAll("//s", "");
+
+        if (iban.startsWith("TR") && iban.length() == 10) {
+            System.out.println("Gondereceginiz miktari giriniz");
+            double miktar = scan.nextDouble();
+
+            if (miktar <= bakiye) {
+                bakiye -= miktar;
+                System.out.println("Para gonderme isleminiz basariyla gerceklesti");
+                bakiyesorgulama();
+            } else {
+                System.out.println("Bakiyeniz yetersiz, tekrar deneyiniz");
+            }
+        } else {
+            System.out.println("Gecerli bir iban girmelisiniz, tekrar deneyiniz");
+            paragonderme();
+        }
+
     }
 
     private static void paracekme(double miktar) {
@@ -133,7 +153,7 @@ public class ATM {
     }
 
     public static void bakiyesorgulama() {
-        
+
         System.out.println("Bakiyeniz: " + bakiye);
         menu();
     }

@@ -1,5 +1,7 @@
 package exercises.javaSorular.yedinciHaftaSorular;
 
+import java.util.Arrays;
+
 public class Q8 {
 
     public static void main(String[] args) {
@@ -20,24 +22,34 @@ public class Q8 {
 
     public static int farkBul(int[] arr) {
 
-        int enBuyukSayi = arr[0];
+        /*
+            1.yontem
 
-        int enKucukSayi = arr[0];
+            int enBuyukSayi = arr[0];
 
-        for (int i = 1; i < arr.length; i++) {
+            int enKucukSayi = arr[0];
 
-            if (arr[i] > enBuyukSayi) {
-                enBuyukSayi = arr[i];
-            } else if (enKucukSayi > arr[i]) {
-                enKucukSayi = arr[i];
+            for (int i = 1; i < arr.length; i++) {
+
+                if (arr[i] > enBuyukSayi) {
+                    enBuyukSayi = arr[i];
+                } else if (enKucukSayi > arr[i]) {
+                    enKucukSayi = arr[i];
+                }
+
             }
 
-        }
+            int fark = enBuyukSayi - enKucukSayi;
 
-        int fark = enBuyukSayi - enKucukSayi;
+            return fark;
+
+        */
+
+        Arrays.sort(arr);
+
+        int fark = arr[arr.length - 1] - arr[0];
 
         return fark;
-
     }
 
 }

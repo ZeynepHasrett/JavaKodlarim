@@ -8,7 +8,7 @@ public class Q3 {
     public static void main(String[] args) {
 
         /*
-            Bir arrayi tersine çeviren  method yazınız.
+            Bir arrayi tersine çeviren method yazınız.
 
             Test Data:
             reverse [1, 2, 3, 4]
@@ -17,13 +17,13 @@ public class Q3 {
 
         int[] arr = {1, 2, 3, 4};
 
-        int[] terstenArr = tersArray(arr);
+        int[] terstenArr = reverse(arr);
 
         System.out.println(Arrays.toString(terstenArr));
 
     }
 
-    public static int[] tersArray(int[] arr) {
+    private static int[] reverse(int[] arr) {
 
         int[] tersArr = new int[arr.length];
 

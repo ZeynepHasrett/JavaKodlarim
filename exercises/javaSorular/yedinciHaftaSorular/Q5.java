@@ -25,9 +25,16 @@ public class Q5 {
 
         int[] arr = new int[sayi2];
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            arr[0] = sayi1;
-            arr[i + 1] += arr[i] + sayi1;
+        /*
+            1.yontem
+            for (int i = 0; i < arr.length - 1; i++) {
+                arr[0] = sayi1;
+                arr[i + 1] += arr[i] + sayi1;
+            }
+        */
+
+        for (int i = 1; i <= sayi2 ; i++) {
+            arr[i - 1] = sayi1 * i;
         }
 
         return arr;

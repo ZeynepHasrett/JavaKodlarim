@@ -12,13 +12,8 @@ public class Q2 {
             num1 = num2 => true
         */
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Lutfen birinci sayiyi giriniz");
-        int num1 = scanner.nextInt();
-
-        System.out.println("Lutfen ikinci sayiyi giriniz");
-        int num2 = scanner.nextInt();
+        int num1 = 25;
+        int num2 = 23;
 
         System.out.println(esitMi(num1, num2));
 

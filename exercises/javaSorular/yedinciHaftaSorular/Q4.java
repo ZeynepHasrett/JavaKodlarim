@@ -18,23 +18,24 @@ public class Q4 {
 
         String[] arr = {"Tomato", "Potato", "Pair"};
 
-        System.out.println(isFourLetters(arr));
+        isFourLetters(arr);
 
     }
 
-    public static List<String> isFourLetters(String[] arr) {
+    public static void isFourLetters(String[] arr) {
 
-        List<String> dortHarfli = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i].length() == 4) {
-                dortHarfli.add(arr[i]);
+
+                list.add("\"" + arr[i] + "\"");
             }
 
         }
 
-        return dortHarfli;
+        System.out.println(list);
 
     }
 

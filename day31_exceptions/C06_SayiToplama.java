@@ -30,7 +30,7 @@ public class C06_SayiToplama {
                 sayac++;
 
             } catch (InputMismatchException e) {
-                girilenMetin = scanner.next(); // q, sanane, 4.5, true, Quinn
+                girilenMetin = scanner.nextLine(); // q, sanane, 4.5, true, Quinn
 
                 if (girilenMetin.equalsIgnoreCase("Q")) {
                     break;
