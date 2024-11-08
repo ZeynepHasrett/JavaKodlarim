@@ -9,60 +9,58 @@ public class C02_Iterator {
 
     public static void main(String[] args) {
 
-        /*
-            Java index kullaniminin mumkun olmadigi durumlarda
-            ya da index kullanmak istemedigimiz durumlarda
-            tum elemanlara ulasabilecegimiz ve kalici degisiklik yapabilecegimiz
-            Iterator isimli bir interface olusturmustur
-         */
+        List<Integer> sayilar = new ArrayList<>(Arrays.asList(2, 3, 5, 6, 7, 8));
 
-        List<Integer> sayilar=new ArrayList<>(Arrays.asList(1,2,3,36,48,9));
+        System.out.println(sayilar); // [2, 3, 5, 6, 7, 8]
 
-        //index kullanmadan list içindeki çift sayıları silelim
+        // index kullanmadan, sayilar listesindeki cift sayilari silin
 
-        // 1  2  3  25  36   48   12   23   9
+        Iterator itr = sayilar.iterator();
 
-        Iterator iterator= sayilar.iterator();
-        System.out.println(iterator.hasNext()); // true
+        System.out.println(itr.hasNext()); // true
 
-        int sayi=(Integer) iterator.next();
-        System.out.println(sayi);
+        Integer sayi = (Integer) itr.next();
 
-        if(sayi%2==0){
+        System.out.println(sayi); // 2
 
-            iterator.remove();
+        if (sayi % 2 == 0) {
+            itr.remove();
         }
-        System.out.println(sayilar);
 
-        sayi=(Integer)iterator.next();
-        if(sayi%2==0){
-            iterator.remove();
-        }
-        System.out.println(sayilar);
+        System.out.println(itr.hasNext()); // true
 
-        sayi=(Integer)iterator.next();
-        if(sayi%2==0){
-            iterator.remove();
-        }
-        System.out.println(sayilar);
-        sayi=(Integer)iterator.next();
-        if(sayi%2==0){
-            iterator.remove();
-        }
-        System.out.println(sayilar);
-        sayi=(Integer)iterator.next();
-        if(sayi%2==0){
-            iterator.remove();
-        }
-        System.out.println(sayilar);
+        sayi = (Integer) itr.next();
 
-        sayi=(Integer)iterator.next();
-        if(sayi%2==0){
-            iterator.remove();
+        if (sayi % 2 == 0) {
+            itr.remove();
         }
-        System.out.println(sayilar);
 
-        System.out.println(iterator.hasNext());
+
+        sayi = (Integer) itr.next();
+
+        if (sayi % 2 == 0) {
+            itr.remove();
+        }
+
+        sayi = (Integer) itr.next();
+
+        if (sayi % 2 == 0) {
+            itr.remove();
+        }
+
+        sayi = (Integer) itr.next();
+
+        if (sayi % 2 == 0) {
+            itr.remove();
+        }
+
+        sayi = (Integer) itr.next();
+
+        if (sayi % 2 == 0) {
+            itr.remove();
+        }
+
+        System.out.println(sayilar); // [3, 5, 7]
 
     }
 

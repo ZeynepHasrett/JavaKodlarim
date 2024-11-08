@@ -6,24 +6,37 @@ public class C01_Iterator {
 
     public static void main(String[] args) {
 
-        int[] arr = {3, 5, 7, 9};
-        // her bir elemanini 2 artiralim
+        /*
+            Java index kullanmanin mumkun olmadigi durumlarda
+            veya index kullanmak istemediginizde
+
+            tum elementleri bize getirebilecek ve kalici degisiklik yapabilecegimiz
+            Iterator interface'ini olusturmustur.
+         */
+
+        int[] arr = {3, 5, 6};
+
+        // array'in tum elementlerini 2 artirin
 
         for (int i = 0; i < arr.length; i++) {
+
             arr[i] += 2;
         }
 
-        System.out.println(Arrays.toString(arr)); // [5, 7, 9, 11]
+        System.out.println(Arrays.toString(arr)); // [5, 7, 8]
 
+        // INDEX kullanmadan bu islemi tekrar yapin
 
-        // index kullanmadan her bir elemani 2 artiralim
+        for (int each : arr
+        ) {
 
-        for (int each : arr){
             each += 2;
         }
 
-        System.out.println(Arrays.toString(arr)); // [5, 7, 9, 11]
+        System.out.println(Arrays.toString(arr)); // [5, 7, 8]
 
     }
 
 }
+
+

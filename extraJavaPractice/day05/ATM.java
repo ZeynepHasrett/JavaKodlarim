@@ -11,19 +11,19 @@ public class ATM {
 
     public static void main(String[] args) {
         /*
-                ATM EKRANI VE ISLEMLER
-            -Kullanicidan giriş için kart numarasi ve şifresini isteyin,
-               eger herhangi birini yanlis girerse tekrar girmesini isteyin.
-            -Kart numarasini boşluk ile girerse, eger numara doğruysa kabul edin.
-            -Kart numarasi ve sifre dogrulanirsa kullanicinin yapabileceği işlemleri (Menu listesi) ekrana yazdirin.
-            -Menu listesinde;
-                   Bakiye sorgulama, para yatirma, para çekme, para gönderme, sifre değiştirme ve cikis
-                   islemleri olacaktır.
-            -Para çekme ve para gonderme işleminde mevcut bakiyeden buyuk para çekilemez ve gönderilemez.
-            -Para gönderme işleminde istenen iban TR ile baslamali ve toplam 10 karakter olmali,
-                eger iban bu kriterlere uygun değilse menü ekranina geri donmelidir.
-           - Sifre değiştirme işlemini yapmadan önce mevcut şifreyi teyit etmelidir.
-        */
+             ATM EKRANI VE ISLEMLER
+        -Kullanicidan giriş için kart numarasi ve şifresini isteyin,
+           eger herhangi birini yanlis girerse tekrar girmesini isteyin.
+        -Kart numarasini boşluk ile girerse, eger numara doğruysa kabul edin.
+        -Kart numarasi ve sifre dogrulanirsa kullanicinin yapabileceği işlemleri (Menu listesi) ekrana yazdirin.
+        -Menu listesinde;
+               Bakiye sorgulama, para yatirma, para çekme, para gönderme, sifre değiştirme ve cikis
+               islemleri olacaktır.
+        -Para çekme ve para gonderme işleminde mevcut bakiyeden buyuk para çekilemez ve gönderilemez.
+        -Para gönderme işleminde istenen iban TR ile baslamali ve toplam 10 karakter olmali,
+            eger iban bu kriterlere uygun değilse menü ekranina geri donmelidir.
+       - Sifre değiştirme işlemini yapmadan önce mevcut şifreyi teyit etmelidir.
+         */
 
         giris();
     }
@@ -102,9 +102,29 @@ public class ATM {
 
     }
 
-    private static void sifredegistirme() {
+    public static void sifredegistirme() {
 
+        System.out.println("Mevcut sifrenizi giriniz");
+        String ksifre = scan.nextLine();
+        if (ksifre.equals(sifre)) {
+            System.out.println("Yeni sifrenizi giriniz:");
+            String yenisifre = scan.nextLine();
+            // System.out.println("Sifreniz güncellendi");
+            // menu();
 
+            //sifrenin 4 rakam olmasi gerekiyorsa;
+            if (yenisifre.length() == 4) {
+                sifre = yenisifre;
+                System.out.println("Sifreniz güncellendi");
+                menu();
+            } else {
+                System.out.println("4 rakamli sifre yazmaniz gerekmektedir");
+                sifredegistirme();
+            }
+        } else {
+            System.out.println("Sifreniz eslesmedi, yeniden deneyiniz");
+            sifredegistirme();
+        }
 
     }
 
@@ -112,18 +132,19 @@ public class ATM {
 
         scan.nextLine();
         System.out.println("IBAN No giriniz (TR ile baslamali ve 10 karakter uzunlugunda olmalidir) ");
-        String iban = scan.nextLine().toUpperCase().replaceAll("//s", "");
+        String iban = scan.nextLine().toUpperCase().replaceAll("\\s", "");
 
         if (iban.startsWith("TR") && iban.length() == 10) {
-            System.out.println("Gondereceginiz miktari giriniz");
+            System.out.println("Göndereceginiz miktari giriniz");
             double miktar = scan.nextDouble();
 
             if (miktar <= bakiye) {
                 bakiye -= miktar;
-                System.out.println("Para gonderme isleminiz basariyla gerceklesti");
+                System.out.println("Para gönderme isleminiz basarili");
                 bakiyesorgulama();
             } else {
                 System.out.println("Bakiyeniz yetersiz, tekrar deneyiniz");
+                menu();
             }
         } else {
             System.out.println("Gecerli bir iban girmelisiniz, tekrar deneyiniz");

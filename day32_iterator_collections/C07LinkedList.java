@@ -1,19 +1,26 @@
 package day32_iterator_collections;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class C07LinkedList {
 
     public static void main(String[] args) {
 
-        List<Integer> sayilar = new LinkedList<>();
+        LinkedList<String> ll1 = new LinkedList<>();
 
-        sayilar.add(30);
-        sayilar.add(40);
-        sayilar.add(50);
+        List<String> ll2 = new LinkedList<>();
 
-        System.out.println(sayilar.hashCode());
+        Queue<String> ll3 = new LinkedList<>();
+
+        Deque<String> ll4 = new LinkedList<>();
+
+        // ll1, ll2, ll3, ll4 hepsi LinkedList<>(); kullaniyor
+        // ama data turleri farkli
+        // objelerin ozellikleri data turune gore sekillendigi icin
+        // bu objelerin hepsi farkli ozelliklerde olacaktir
 
     }
 

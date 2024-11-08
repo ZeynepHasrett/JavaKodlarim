@@ -9,33 +9,25 @@ public class C03_Iterator {
 
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(2, 5, 9, 12, 36, 28, 39, 40, 102));
+        List<Integer> sayilar = new ArrayList<>(Arrays.asList(9, 3, 5, 4, 6, 6, 7, 8));
 
-        System.out.println(list);
+        System.out.println(sayilar); // [9, 3, 5, 4, 6, 6, 7, 8]
 
-        Iterator itr = list.iterator();
+        // index kullanmadan, sayilar listesindeki cift sayilari silin
 
-//        while (itr.hasNext()) {
-//
-//            int sayi = (Integer) itr.next();
-//
-//            if (sayi % 2 == 0) {
-//                itr.remove();
-//            }
-//        }
-//
-//        System.out.println(list);
+        Iterator itr = sayilar.iterator();
 
-        // tum elemanlari toplayalim
-
-        int toplam = 0;
 
         while (itr.hasNext()) {
-            int sayi = (int) itr.next();
-            toplam += sayi;
+
+            Integer sayi = (Integer) itr.next();
+
+            if (sayi % 2 == 0) {
+                itr.remove();
+            }
         }
 
-        System.out.println(toplam);
+        System.out.println(sayilar);
 
     }
 
