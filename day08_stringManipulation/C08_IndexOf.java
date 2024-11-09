@@ -16,7 +16,7 @@ public class C08_IndexOf {
         // calis kelimesi hangi index'ten itibaren basliyor
         System.out.println(str.indexOf("calis")); // 4
 
-        // 5. inde'ten sonra aradiginda ilk o harfi hangi index'tedir
+        // 5. index'ten sonra aradiginda ilk o harfi hangi index'tedir
         System.out.println(str.indexOf('o', 5)); // 20
         // DİKKAT: Aramaya verilen index'ten baslar fakat index yazarken bastan sayar
 
