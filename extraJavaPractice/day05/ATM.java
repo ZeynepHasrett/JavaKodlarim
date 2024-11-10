@@ -31,8 +31,7 @@ public class ATM {
     public static void giris() {
 
         System.out.println("\t\t\t****************JAVABANK'A HOSGELDINIZ**************\n" +
-                "Güvenliginiz icin sifrenizi kimseyle paylasmayiniz\n" +
-                "***********************\n");
+                "Güvenliginiz icin sifrenizi kimseyle paylasmayiniz");
 
         System.out.println("Kart numaranizi giriniz");
         String KkartNo = scan.nextLine();
@@ -65,6 +64,7 @@ public class ATM {
         int secim = scan.nextInt();
 
         switch (secim) {
+
             case 1: {
                 bakiyesorgulama();
                 break;
@@ -106,6 +106,7 @@ public class ATM {
 
         System.out.println("Mevcut sifrenizi giriniz");
         String ksifre = scan.nextLine();
+
         if (ksifre.equals(sifre)) {
             System.out.println("Yeni sifrenizi giriniz:");
             String yenisifre = scan.nextLine();
@@ -128,7 +129,7 @@ public class ATM {
 
     }
 
-    private static void paragonderme() {
+    public static void paragonderme() {
 
         scan.nextLine();
         System.out.println("IBAN No giriniz (TR ile baslamali ve 10 karakter uzunlugunda olmalidir) ");

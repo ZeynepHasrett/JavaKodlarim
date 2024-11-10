@@ -27,7 +27,7 @@ public class WiseMarket {
            4-urunleri listele ve
            5-fiyatlari gelsin
            6-Alışveriş bitince fiş yazdırsın.
-           7- Fiş yazdırdıktan sonra da çıkış yapılsın.
+           7- Fiş yazdırdıktan sonra da çıkış yapılsın."
     */
 
     public static void main(String[] args) {
@@ -193,6 +193,7 @@ public class WiseMarket {
         System.out.println("Lütfen Satın almak istediğiniz ürün kodunu giriniz");
         System.out.println("------          Ürün Listesi          ------");
         System.out.println("301-Dubai Çikolatası  350₺\n302-Peçete  25₺\n303-5 Lt Su  30₺\n304-Nutella  180₺\n305-Tuvalet Kağıtı  189₺");
+
         while (!ekUrun) {
 
             urunKodu = scan.nextInt();
@@ -273,6 +274,7 @@ public class WiseMarket {
         System.out.print("\n\n\nÇıkış Yapılıyor  ");
 
         scan.close(); // Giriş yapmak için açılan tarayıcı kapatılır
+
         System.exit(0); // çalışan Kodu durdurur. Bu satırdan sonrası çalışmaz
     }
 
