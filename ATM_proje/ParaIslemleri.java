@@ -1,8 +1,7 @@
 package ATM_proje;
 
-import static ATM_proje.Bakiyeİslemleri.bakiyeSorgulama;
+import static ATM_proje.BakiyeIslemleri.bakiyeSorgulama;
 import static ATM_proje.MenuIslemleri.menu;
-import static extraJavaPractice.day05.ATM.paragonderme;
 
 public class ParaIslemleri {
 

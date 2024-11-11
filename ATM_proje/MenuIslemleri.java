@@ -1,6 +1,6 @@
 package ATM_proje;
 
-import static ATM_proje.Bakiyeİslemleri.bakiyeSorgulama;
+import static ATM_proje.BakiyeIslemleri.bakiyeSorgulama;
 import static ATM_proje.ParaIslemleri.paraCekme;
 import static ATM_proje.ParaIslemleri.paraGonderme;
 import static ATM_proje.ParaIslemleri.paraYatirma;

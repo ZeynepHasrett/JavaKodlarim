@@ -1,8 +1,6 @@
 package ATM_proje;
 
-import static ATM_proje.MenuIslemleri.menu;
-
-public class Bakiyeİslemleri {
+public class BakiyeIslemleri {
 
     public static void bakiyeSorgulama() {
 
