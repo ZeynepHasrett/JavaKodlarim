@@ -23,6 +23,12 @@ public class Q01 {
 
         makeTitle("tüm ilk harfler büyük olacak");
 
+        /*
+            System.out.println("================2. yol==================");
+
+            Arrays.stream(str).map(t -> t.substring(0, 1).toUpperCase() + t.substring(1)).forEach(t -> System.out.print(t + " "));
+        */
+
     }
 
     public static void makeTitle(String str) {
@@ -43,6 +49,18 @@ public class Q01 {
             }
 
         System.out.println(sb);
+
+        /* 3. yol
+            public static void makeTitle(String[] str) {
+
+                for (int i = 0; i < str.length; i++) {
+                    String m1 = str[i].substring(0, 1).toUpperCase() + str[i].substring(1);
+                    System.out.print(m1 + " ");
+
+                }
+
+            }
+         */
 
     }
 
