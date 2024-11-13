@@ -104,6 +104,7 @@ public class ATM {
 
     public static void sifredegistirme() {
 
+        scan.nextLine();
         System.out.println("Mevcut sifrenizi giriniz");
         String ksifre = scan.nextLine();
 

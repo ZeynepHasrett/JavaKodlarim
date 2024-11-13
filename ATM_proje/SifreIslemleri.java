@@ -7,12 +7,11 @@ public class SifreIslemleri {
 
     public static void sifreDegistirme() {
 
+        GirisIslemleri.scanner.nextLine();
         System.out.println("Lutfen mevcut sifrenizi giriniz");
         String kSifre = GirisIslemleri.scanner.nextLine();
-        GirisIslemleri.scanner.nextLine();
 
         if (kSifre.equals(GirisIslemleri.sifre)) {
-
             System.out.println("Yeni sifrenizi giriniz:");
             String yeniSifre = GirisIslemleri.scanner.nextLine();
             System.out.println("Sifreniz güncellendi");
