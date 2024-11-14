@@ -1,14 +1,14 @@
 package day35_maps_nestedmaps;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class C03_NestedMap {
 
     public static void main(String[] args) {
 
-            /*
+        /*
             key = 101, value ==> isim=Ali, soyisim=Can, sinif=11, sube=H, bolum=MF
-
-
-
 
             ogrenciMap.put(102,"Veli-Cem-10-K-TM");
             ogrenciMap.put(103,"Ali-Cem-11-K-TM");
@@ -62,7 +62,6 @@ public class C03_NestedMap {
         ogrenciMap.get(101).put("sinif","10");
 
         System.out.println(ogrenciMap);
-
 
     }
 

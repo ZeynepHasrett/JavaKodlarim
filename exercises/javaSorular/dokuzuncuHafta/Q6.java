@@ -1,5 +1,7 @@
 package exercises.javaSorular.dokuzuncuHafta;
 
+import java.util.LinkedList;
+
 public class Q6 {
 
     public static void main(String[] args) {
@@ -17,7 +19,17 @@ public class Q6 {
             beyaz
          */
 
+        LinkedList<String> renkler = new LinkedList<>();
 
+        renkler.add("sari");
+        renkler.add("mavi");
+        renkler.add("mor");
+        renkler.add("yesil");
+        renkler.add("beyaz");
+
+        for (int i = 0; i < renkler.size(); i++) {
+            System.out.println(renkler.get(i));
+        }
 
     }
 
