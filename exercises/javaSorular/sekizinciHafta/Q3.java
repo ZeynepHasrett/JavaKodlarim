@@ -9,7 +9,6 @@ public class Q3 {
             Eğer herhangi atlanan bir harf yoksa "Sıralı Harfler" yazdıralım.
 
             Örnekler
-
             kayipHarfler("abdefg")
             Çıktı : c
 
@@ -19,7 +18,7 @@ public class Q3 {
             kayipHarfler("abcdefgh")
             Çıktı : Sıralı Harfler
 
-            ilk örnekte :  /// b harfinden sonra c gelmemiş
+            ilk örnekte :    /// b harfinden sonra c gelmemiş
             ikinci örnekte : /// p harfinden sonra r gelmemiş
          */
 
@@ -32,8 +31,6 @@ public class Q3 {
     }
 
     public static void kayipHarfler(String str) {
-
-        StringBuilder sb = new StringBuilder();
 
         boolean siraliMi = true;
 
@@ -49,6 +46,18 @@ public class Q3 {
             }
 
         }
+
+        /*
+            for (int i = 0; i <str.length()-1 ; i++) {
+
+            if (str.charAt(i)+1!=str.charAt(i+1)) {
+                System.out.print(Character.toString(str.charAt(i)+1)+" ");
+                kontrol=false;
+                break;
+            }
+
+        }
+         */
 
         if (siraliMi) {
             System.out.println("Çıktı : Sıralı Harfler");

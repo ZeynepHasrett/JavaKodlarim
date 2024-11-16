@@ -5,7 +5,7 @@ public class Q1 {
     public static void main(String[] args) {
 
         /*
-            Girilen metindeki tüm kelimelerin ilk harflerini büyük yapınız.(diğer harflere dokunmayın, büyükse büyük, küçükse küçük kalsın).
+            Girilen metindeki tüm kelimelerin ilk harflerini büyük yapınız.(Diğer harflere dokunmayın, büyükse büyük, küçükse küçük kalsın).
 
             Örnek
             makeTitle("Bu bir başlıktır")
