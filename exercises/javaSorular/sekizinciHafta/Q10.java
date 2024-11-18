@@ -5,7 +5,7 @@ public class Q10 {
     public static void main(String[] args) {
 
         /*
-            Youtube video sayfasının urlsinde yer alan video id'sini
+            Youtube video sayfasının url'sinde yer alan video id'sini
             return eden bir method yazınız :
 
              ÖRNEKLER

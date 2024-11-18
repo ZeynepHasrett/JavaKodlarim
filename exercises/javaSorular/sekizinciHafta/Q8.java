@@ -37,17 +37,25 @@ public class Q8 {
 
         List<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < arr1.length ; i++) {
-
+        for (int i = 0; i < arr1.length; i++) {
             list.add(arr1[i]);
         }
 
         for (int i = 0; i < arr2.length; i++) {
-
             list.add(arr2[i]);
         }
 
         System.out.println(list);
+
+        /*
+            2.yontem
+
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(1,3,5));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(2,6,8));
+
+        list1.addAll(list2);
+        System.out.println(list1);
+       */
 
     }
 

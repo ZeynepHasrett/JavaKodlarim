@@ -55,7 +55,17 @@ public class Q5 {
             durum = false;
         }
 
+        /*
+            2. yontem
+
         System.out.println("Çıktı : " + durum);
+
+        if (mail.contains("@") && mail.contains(".") && mail.charAt(0) != '@'){
+            durum = true;
+        }
+
+        System.out.println("Çıktı : " + durum);
+        */
 
     }
 

@@ -68,6 +68,24 @@ public class Q9 {
 
         return toplamUcret;
 
+    /*
+        double toplamUcret = 0;
+
+        toplamUcret += (bitSaati - basSaati) * saatlikUcret;
+
+        if (bitSaati > 17.00) {
+            toplamUcret += (bitSaati - 17.00) * saatlikUcret * (mesaiKatSayisi - 1);
+        }
+        if (basSaati < 09.00) {
+            toplamUcret += (09.00 - basSaati) * saatlikUcret * (mesaiKatSayisi - 1);
+        }
+
+        return toplamUcret;
+
+    */
+
     }
 
 }
+
+

@@ -5,8 +5,8 @@ public class Q6 {
     public static void main(String[] args) {
 
         /*
-            Yazılan iki String'den ikincisi, birincisinin son harflerine eşitse, true,
-            diğer durumda false dönderen bir program yazınız.
+            Yazılan iki String'den ikincisi, birincisinin son harflerine eşitse true,
+            diğer durumda false döndüren bir program yazınız.
 
             Örnekler:
             kontrolEt("abc", "bc") ➞ true
