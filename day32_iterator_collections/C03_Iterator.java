@@ -17,7 +17,6 @@ public class C03_Iterator {
 
         Iterator itr = sayilar.iterator();
 
-
         while (itr.hasNext()) {
 
             Integer sayi = (Integer) itr.next();

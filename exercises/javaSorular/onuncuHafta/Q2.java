@@ -1,41 +1,41 @@
 package exercises.javaSorular.onuncuHafta;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.TreeSet;
 
-public class Q1 {
+public class Q2 {
 
     public static void main(String[] args) {
 
         /*
-            HashSet ile list oluşturalım ve  TreeSet ile sıralayalım
-            ve listeyi yazdıralım.
+            Bir HashSet oluşturalım ve
+            HashSet elemanlarını TreeSet'e dönüştürelim.
+            TreeSet elemanlarını tek tek yazdıralım.
 
-            HashSet List: sari,mavi,kirmizi,yesil,mor
+            HashSet elemanları: sari,mavi,yesil,turuncu,kirmizi
 
             Beklenen Çıktı:
-            TreeSet elements:
+            Tree Set Elemanlari:
             kirmizi
             mavi
-            mor
             sari
+            turuncu
             yesil
-     */
+         */
 
         HashSet<String> renkler = new HashSet<>();
 
         renkler.add("sari");
         renkler.add("mavi");
-        renkler.add("kirmizi");
         renkler.add("yesil");
-        renkler.add("mor");
+        renkler.add("turuncu");
+        renkler.add("kirmizi");
 
         TreeSet<String> renklerTreeSet = new TreeSet<>(renkler);
 
-        System.out.println("TreeSet elements:");
+        System.out.println("Tree Set Elemanlari:");
 
-        for (String each : renklerTreeSet){
+        for (String each : renklerTreeSet) {
             System.out.println(each);
         }
 

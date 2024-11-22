@@ -29,7 +29,6 @@ public class C01_Iterator {
 
         for (int each : arr
         ) {
-
             each += 2;
         }
 
