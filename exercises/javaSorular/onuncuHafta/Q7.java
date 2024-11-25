@@ -1,5 +1,7 @@
 package exercises.javaSorular.onuncuHafta;
 
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Q7 {
@@ -16,7 +18,7 @@ public class Q7 {
 
             Beklenen Çıktı:
             1. TreeSet: [kirmizi,mavi,sari,yesil]
-            2. TreeSet: [mavi,pembe,turuncu,yesil
+            2. TreeSet: [beyaz, mavi, turuncu, yesil]
 
             Karsilastirma Sonucu:
             no
@@ -25,22 +27,21 @@ public class Q7 {
             yes
          */
 
-        TreeSet<String> birinciTreeSet = new TreeSet<>();
-
-        birinciTreeSet.add("mavi");
-        birinciTreeSet.add("yesil");
-        birinciTreeSet.add("kirmizi");
-        birinciTreeSet.add("sari");
-
-        TreeSet<String> ikinciTreeSet = new TreeSet<>();
-
-        ikinciTreeSet.add("yesil");
-        ikinciTreeSet.add("mavi");
-        ikinciTreeSet.add("pembe");
-        ikinciTreeSet.add("turuncu");
-
+        TreeSet<String> birinciTreeSet = new TreeSet<>(Arrays.asList("mavi", "yesil", "kirmizi", "sari"));
         System.out.println("1. TreeSet: " + birinciTreeSet);
+
+        TreeSet<String> ikinciTreeSet = new TreeSet<>(Arrays.asList("yesil", "mavi", "beyaz", "turuncu"));
         System.out.println("2. TreeSet: " + ikinciTreeSet);
+
+        Iterator itr1 = birinciTreeSet.iterator();
+        Iterator itr2 = ikinciTreeSet.iterator();
+
+        System.out.println("Karsilastirma Sonucu: ");
+
+        while (itr1.hasNext() && itr2.hasNext()) {
+            System.out.println(itr1.next().equals(itr2.next()) ? "yes" : "no");
+
+        }
 
     }
 
