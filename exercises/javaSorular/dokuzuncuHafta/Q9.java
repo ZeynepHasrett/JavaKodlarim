@@ -38,11 +38,23 @@ public class Q9 {
 
         int sonIndex = renkler.size();
 
-        ListIterator<String> iterator = renkler.listIterator(sonIndex);
+        ListIterator iterator = renkler.listIterator(sonIndex);
 
         while (iterator.hasPrevious()) {
             System.out.println(iterator.previous());
         }
+
+        /*
+            //2.yontem
+
+            while (iterator.hasNext()){//bunu yaparak cursoru(imleci) sona getiriyoruz(hasnext next ile)
+            iterator.next();
+
+            }while (iterator.hasPrevious()){//bunulada sonra eleman var mi
+
+            System.out.println(iterator.previous());
+            }
+        */
 
     }
 

@@ -33,7 +33,15 @@ public class Q10 {
 
         Collections.swap(renkler, 0, 3);
 
-        System.out.println(renkler);
+        System.out.println("Swap sonrası durum: " + renkler);
+
+        /* try {
+           Collections.swap(li1, 0, 3);
+            System.out.println("Swap sonrası durum: " + li1);
+        }catch (IndexOutOfBoundsException e) {
+           System.out.println("\nException thrown : " + e);
+       }
+      */
 
     }
 

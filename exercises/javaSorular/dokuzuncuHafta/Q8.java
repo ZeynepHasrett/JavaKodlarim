@@ -7,7 +7,7 @@ public class Q8 {
     public static void main(String[] args) {
 
         /*
-            Bir LinkedList oluşturalım ve ilk ve son elemanlarını iterator özelliğini kullanarak yazdıralım
+            Bir LinkedList oluşturalım ve ilk ve son elemanlarını iterator özelliğini kullanarak yazdıralım.
 
             LinkedList: sari,mavi,turuncu,siyah,yesil,beyaz
 

@@ -28,8 +28,8 @@ public class Q3 {
         renkler.add("kirmizi");
         renkler.add("turuncu");
 
-        System.out.println("Arrayin 1. elemani: " + renkler.get(0));
-        System.out.println("Arrayin 3. elemani: " + renkler.get(2));
+        System.out.println("Arrayin 1. elemani: " + renkler.get(0)); // beyaz
+        System.out.println("Arrayin 3. elemani: " + renkler.get(2)); // sari
 
     }
 

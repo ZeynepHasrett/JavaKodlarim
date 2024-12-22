@@ -34,21 +34,10 @@ public class Q5 {
 
         System.out.println("Orjinal array list: " + renkler);
 
-        for (int i = 0; i < renkler.size(); i++) {
-            System.out.println(renkler.get(i));
+        for (String each : renkler) {
+            System.out.println(each);
         }
 
     }
 
-    public static class Q8 {
-
-        public static void main(String[] args) {
-
-            /*
-
-             */
-
-        }
-
-    }
 }

@@ -27,8 +27,8 @@ public class Q1 {
         renkler.add("mavi");
         renkler.add("turuncu");
 
-        for (int i = 0; i < renkler.size(); i++) {
-            System.out.println(renkler.get(i));
+        for (String each : renkler) {
+            System.out.println(each);
         }
 
     }
